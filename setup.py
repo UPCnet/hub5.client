@@ -11,11 +11,12 @@ long_description = '\n\n'.join([
     open('CHANGES.rst').read(),
 ])
 
+version = '1.0a1'
 
 setup(
     name='hub5.client',
-    version='1.0a1',
-    description="An add-on for Plone",
+    version=version,
+    description="Rest client for ULearn HUB Plone 5",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -30,18 +31,15 @@ setup(
     keywords='Python Plone',
     author='Plone Team',
     author_email='plone.team@upcnet.es',
-    url='https://pypi.python.org/pypi/hub5.client',
+    url='https://github.com/UPCnet/hub5.client',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['hub5'],
     package_dir={'': 'src'},
     include_package_data=True,
-    zip_safe=False,
+    zip_safe=True,
     install_requires=[
-        'plone.api',
-        'Products.GenericSetup>=1.8.2',
-        'setuptools',
-        'z3c.jbot',
+        'max5.client'
     ],
     extras_require={
         'test': [
