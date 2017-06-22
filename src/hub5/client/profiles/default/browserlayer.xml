@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="hub5.client"
+      interface="hub5.client.interfaces.IHub5ClientLayer"
+      />
+</layers>

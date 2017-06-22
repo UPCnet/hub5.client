@@ -1,0 +1,4 @@
+graft src/hub5
+graft docs
+include *.rst
+global-exclude *.pyc

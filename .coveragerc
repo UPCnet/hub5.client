@@ -1,0 +1,6 @@
+[report]
+include =
+    src/hub5/*
+omit =
+    */test*
+    */upgrades/*
