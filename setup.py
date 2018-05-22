@@ -11,7 +11,7 @@ long_description = '\n\n'.join([
     open('CHANGES.rst').read(),
 ])
 
-version = '1.0a1'
+version = '0.1'
 
 setup(
     name='hub5.client',
